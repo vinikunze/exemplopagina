@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vértice Agro | Drone Agrícola e Compra de Grãos em Sorriso-MT</title>
+<meta name="description" content="Pulverização e aplicação com drone agrícola e compra de grãos com pagamento rápido. Atendimento em Sorriso, Sinop e todo o Médio Norte de Mato Grosso.">
+<meta property="og:title" content="Vértice Agro | Drone Agrícola e Compra de Grãos">
+<meta property="og:description" content="Aplicação com drone e compra de grãos em Sorriso e região. Fale direto no WhatsApp.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0b120d">
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Vértice Agro",
+  "description": "Pulverização com drone agrícola e compra de grãos.",
+  "areaServed": ["Sorriso", "Sinop", "Lucas do Rio Verde", "Nova Mutum", "Vera", "Ipiranga do Norte"],
+  "address": { "@type": "PostalAddress", "addressLocality": "Sorriso", "addressRegion": "MT", "addressCountry": "BR" }
+}
+</script>
+
+<style>
+:root{
+  --bg:#0b120d;
+  --bg-2:#111a14;
+  --ink:#f3f1e8;
+  --muted:#a9b3a8;
+  --cream:#f5f2e9;
+  --cream-2:#ece7d8;
+  --text:#18201a;
+  --text-muted:#5b665c;
+  --green:#2f8a4c;
+  --green-deep:#1a4d2c;
+  --leaf:#8fd16a;
+  --gold:#e2b13c;
+  --gold-soft:#f3d98c;
+  --line:rgba(255,255,255,.09);
+  --line-dark:rgba(24,32,26,.1);
+  --radius:22px;
+  --shadow:0 20px 60px -20px rgba(10,20,12,.25);
+  --font-h:"Plus Jakarta Sans",system-ui,sans-serif;
+  --font-b:"Inter",system-ui,sans-serif;
+  --max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-b);background:var(--cream);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--font-h);line-height:1.08;letter-spacing:-.025em}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 20px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--green)}
+.eyebrow::before{content:"";width:18px;height:2px;background:currentColor;border-radius:2px}
+
+/* Botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 24px;border-radius:999px;font-weight:600;font-size:.98rem;transition:transform .25s ease,box-shadow .25s ease,background .25s ease;white-space:nowrap}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-gold{background:var(--gold);color:#1b1608;box-shadow:0 10px 30px -10px rgba(226,177,60,.6)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 16px 36px -12px rgba(226,177,60,.75)}
+.btn-ghost{border:1px solid rgba(255,255,255,.22);color:var(--ink);background:rgba(255,255,255,.04);backdrop-filter:blur(8px)}
+.btn-ghost:hover{background:rgba(255,255,255,.1);transform:translateY(-2px)}
+.btn-dark{background:var(--text);color:var(--cream)}
+.btn-dark:hover{transform:translateY(-2px);background:#000}
+
+/* Navegação */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s ease,border-color .3s ease,padding .3s ease;border-bottom:1px solid transparent;padding:18px 0}
+.nav.scrolled{background:rgba(11,18,13,.82);backdrop-filter:blur(14px);border-color:var(--line);padding:12px 0}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;color:var(--ink);font-family:var(--font-h);font-weight:800;font-size:1.12rem;letter-spacing:-.02em}
+.logo-mark{width:36px;height:36px;border-radius:11px;background:linear-gradient(140deg,var(--green),var(--green-deep));display:grid;place-items:center;box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.logo-mark svg{width:20px;height:20px}
+.logo small{display:block;font-family:var(--font-b);font-weight:500;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:-2px}
+.nav-links{display:none;gap:30px;color:var(--muted);font-size:.93rem;font-weight:500}
+.nav-links a:hover{color:var(--ink)}
+.nav .btn{padding:11px 18px;font-size:.88rem}
+
+/* Hero */
+.hero{position:relative;background:var(--bg);color:var(--ink);padding:120px 0 0;overflow:hidden;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:-20% -10% auto;height:120%;background:
+  radial-gradient(600px 400px at 80% 20%,rgba(226,177,60,.16),transparent 60%),
+  radial-gradient(700px 500px at 10% 0%,rgba(47,138,76,.28),transparent 60%);z-index:-2}
+.field{position:absolute;left:-10%;right:-10%;bottom:0;height:46%;z-index:-1;
+  background:
+    repeating-linear-gradient(90deg,rgba(143,209,106,.22) 0 2px,transparent 2px 46px),
+    linear-gradient(180deg,transparent,rgba(26,77,44,.55) 40%,#14301d);
+  transform:perspective(500px) rotateX(58deg);transform-origin:bottom;mask-image:linear-gradient(180deg,transparent,#000 35%)}
+.hero-grid{display:grid;gap:28px;align-items:center}
+.hero .eyebrow{color:var(--gold)}
+.hero h1{font-size:clamp(2.3rem,8.4vw,4.4rem);font-weight:800;margin:16px 0 18px}
+.hero h1 em{font-style:normal;background:linear-gradient(100deg,var(--gold-soft),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{color:var(--muted);font-size:1.06rem;max-width:520px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero-ctas .btn{flex:1 1 200px}
+/* Foto do hero */
+.hero-photo{position:relative;width:100%;max-width:600px;margin:0 auto}
+.hero-photo figure{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:4/3;box-shadow:0 40px 80px -30px rgba(0,0,0,.8),0 0 0 1px rgba(255,255,255,.08)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;transform:scale(1.06);animation:drift 14s ease-in-out infinite alternate}
+@keyframes drift{from{transform:scale(1.06) translateX(0)}to{transform:scale(1.12) translateX(-2%)}}
+.hero-photo figure::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(11,18,13,.55))}
+.badge{position:absolute;z-index:2;display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:14px;background:rgba(11,18,13,.72);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.12);font-size:.82rem;line-height:1.25;color:var(--ink)}
+.badge b{display:block;font-family:var(--font-h);font-size:.95rem}
+.badge span{color:var(--muted)}
+.badge .dot{width:9px;height:9px;border-radius:50%;background:var(--leaf);box-shadow:0 0 0 4px rgba(143,209,106,.2);animation:blink 1.8s ease-in-out infinite;flex:none}
+@keyframes blink{50%{opacity:.35}}
+.badge-a{left:14px;bottom:14px}
+.badge-b{right:14px;top:14px;display:none}
+@media (min-width:720px){.badge-b{display:flex}}
+.badge-b .ic{width:30px;height:30px;border-radius:9px;background:var(--gold);color:#1b1608;display:grid;place-items:center;font-family:var(--font-h);font-weight:800;font-size:.8rem}
+
+/* Fotos de conteúdo */
+.photo{position:relative;border-radius:24px;overflow:hidden;background:var(--cream-2)}
+.photo img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.photo:hover img{transform:scale(1.04)}
+.photo .cap{position:absolute;left:14px;bottom:14px;z-index:2;padding:8px 14px;border-radius:999px;background:rgba(11,18,13,.7);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--ink);font-size:.8rem;font-weight:600}
+.photo-wide{aspect-ratio:4/3;margin-bottom:22px}
+.photo-pilot{aspect-ratio:4/5}
+.photo-grain{aspect-ratio:16/10;margin-top:22px}
+
+.stats{display:grid;grid-template-columns:repeat(3,1fr);margin-top:44px;border-top:1px solid var(--line);position:relative}
+.stat{padding:22px 4px 30px}
+.stat + .stat{border-left:1px solid var(--line);padding-left:14px}
+.stat strong{display:block;font-family:var(--font-h);font-size:clamp(1.3rem,5vw,2rem);font-weight:800;color:var(--ink);letter-spacing:-.02em}
+.stat span{font-size:.8rem;color:var(--muted);line-height:1.35;display:block;margin-top:2px}
+
+/* Escolha de caminho */
+.paths{margin-top:-1px;background:var(--cream);padding:70px 0 20px}
+.paths-grid{display:grid;gap:16px}
+.path{position:relative;border-radius:var(--radius);padding:30px 26px;overflow:hidden;min-height:230px;display:flex;flex-direction:column;justify-content:space-between;gap:22px;transition:transform .35s ease,box-shadow .35s ease}
+.path:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.path.drone-card{background:linear-gradient(160deg,rgba(15,45,26,.94) 30%,rgba(15,45,26,.55)),url("https://images.unsplash.com/photo-1713952160156-bb59cac789a9?auto=format&fit=crop&w=1000&q=70") center/cover;color:var(--ink)}
+.path.grain-card{background:linear-gradient(160deg,rgba(240,207,116,.96) 30%,rgba(217,162,44,.72)),url("https://images.unsplash.com/photo-1601993488142-d3050a16478d?auto=format&fit=crop&w=1000&q=70") center/cover;color:#231a05}
+.path h3{font-size:1.65rem;font-weight:800}
+.path p{opacity:.85;margin-top:8px;max-width:340px}
+.path .go{display:inline-flex;align-items:center;gap:8px;font-weight:600}
+.path .go svg{width:18px;height:18px;transition:transform .3s ease}
+.path:hover .go svg{transform:translateX(4px)}
+.path .tag{font-size:.74rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;opacity:.75}
+.path .deco{position:absolute;right:-30px;bottom:-30px;width:170px;height:170px;opacity:.16}
+
+/* Seções */
+section{scroll-margin-top:80px}
+.section{padding:90px 0}
+.section-head{max-width:640px;margin-bottom:44px}
+.section-head h2{font-size:clamp(1.9rem,6vw,3rem);font-weight:800;margin:12px 0 14px}
+.section-head p{color:var(--text-muted);font-size:1.04rem}
+
+.services{display:grid;gap:14px}
+.service{background:#fff;border:1px solid var(--line-dark);border-radius:20px;padding:24px;transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease}
+.service:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:transparent}
+.icon{width:46px;height:46px;border-radius:14px;background:rgba(47,138,76,.1);color:var(--green);display:grid;place-items:center;margin-bottom:16px}
+.icon svg{width:22px;height:22px}
+.service h3{font-size:1.12rem;font-weight:700;margin-bottom:6px}
+.service p{color:var(--text-muted);font-size:.95rem}
+
+/* Faixa escura de vantagens */
+.band{background:var(--bg);color:var(--ink);border-radius:32px;margin:0 12px;padding:70px 0;position:relative;overflow:hidden}
+.band::after{content:"";position:absolute;width:520px;height:520px;right:-180px;top:-200px;background:radial-gradient(circle,rgba(226,177,60,.18),transparent 65%)}
+.band .section-head p{color:var(--muted)}
+.band .eyebrow{color:var(--gold)}
+.band-grid{display:grid;gap:28px;position:relative;z-index:1}
+.band .photo{background:#111a14}
+.perks{display:grid;gap:12px;position:relative;z-index:1}
+.perk{display:flex;gap:16px;align-items:flex-start;padding:22px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.03)}
+.perk-num{font-family:var(--font-h);font-weight:800;font-size:1.5rem;color:var(--gold);min-width:64px;line-height:1.1}
+.perk h3{font-size:1.04rem;font-weight:700;margin-bottom:4px}
+.perk p{color:var(--muted);font-size:.93rem}
+.gear{margin-top:28px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;color:var(--muted);font-size:.9rem;position:relative;z-index:1}
+.gear b{color:var(--ink);font-weight:600;border:1px solid var(--line);padding:7px 14px;border-radius:999px;background:rgba(255,255,255,.04)}
+
+/* Grãos */
+.grain-wrap{display:grid;gap:30px;align-items:start}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 26px}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;background:#fff;border:1px solid var(--line-dark);font-weight:600;font-size:.93rem}
+.chip i{width:10px;height:10px;border-radius:50%;background:var(--gold)}
+.chip:nth-child(2n) i{background:var(--green)}
+.quality{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.quality div{background:var(--cream-2);border-radius:16px;padding:18px}
+.quality strong{font-family:var(--font-h);font-size:1.05rem;display:block}
+.quality span{color:var(--text-muted);font-size:.9rem}
+.steps{background:#fff;border:1px solid var(--line-dark);border-radius:var(--radius);padding:28px 24px;box-shadow:var(--shadow)}
+.steps h3{font-size:1.25rem;font-weight:800;margin-bottom:20px}
+.step{display:flex;gap:16px;padding:16px 0;position:relative}
+.step + .step{border-top:1px dashed var(--line-dark)}
+.step-n{width:38px;height:38px;flex:none;border-radius:50%;background:var(--text);color:var(--gold);display:grid;place-items:center;font-family:var(--font-h);font-weight:800}
+.step b{display:block;font-size:1rem}
+.step span{color:var(--text-muted);font-size:.92rem}
+.steps .btn{width:100%;margin-top:18px}
+
+/* Região */
+.region{display:grid;gap:30px;align-items:center}
+.cities{display:flex;flex-wrap:wrap;gap:10px}
+.city{padding:12px 18px;border-radius:14px;background:#fff;border:1px solid var(--line-dark);font-weight:600;display:flex;align-items:center;gap:8px}
+.city svg{width:16px;height:16px;color:var(--green)}
+.city.main{background:var(--green-deep);color:var(--ink);border-color:transparent}
+.city.main svg{color:var(--gold)}
+.region-note{margin-top:18px;color:var(--text-muted);font-size:.95rem}
+
+/* FAQ */
+.faq{max-width:780px}
+details{border-bottom:1px solid var(--line-dark);padding:4px 0}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 0;font-family:var(--font-h);font-weight:700;font-size:1.08rem}
+summary::-webkit-details-marker{display:none}
+summary .plus{width:30px;height:30px;flex:none;border-radius:50%;border:1px solid var(--line-dark);display:grid;place-items:center;transition:transform .3s ease,background .3s ease}
+details[open] summary .plus{transform:rotate(45deg);background:var(--gold);border-color:transparent}
+details p{color:var(--text-muted);padding:0 0 22px;max-width:640px}
+
+/* CTA final */
+.final{background:linear-gradient(180deg,rgba(11,18,13,.9),rgba(11,18,13,.78)),url("https://images.unsplash.com/photo-1742161261695-922c22274e5b?auto=format&fit=crop&w=1800&q=70") center/cover;color:var(--ink);padding:100px 0;text-align:center;position:relative;overflow:hidden}
+.final::before{content:"";position:absolute;inset:auto -20% -60% -20%;height:100%;background:radial-gradient(closest-side,rgba(47,138,76,.4),transparent)}
+.final .wrap{position:relative}
+.final h2{font-size:clamp(2rem,7vw,3.4rem);font-weight:800;max-width:760px;margin:14px auto 16px}
+.final p{color:var(--muted);max-width:520px;margin:0 auto 30px}
+.final .eyebrow{color:var(--gold)}
+
+footer{background:#070c08;color:var(--muted);padding:40px 0 100px;font-size:.88rem}
+footer .wrap{display:flex;flex-direction:column;gap:16px}
+footer .logo{font-size:1rem}
+.foot-row{display:flex;flex-wrap:wrap;gap:8px 24px}
+.foot-row a:hover{color:var(--ink)}
+.demo-note{border-top:1px solid var(--line);padding-top:18px;font-size:.8rem;opacity:.75}
+
+/* WhatsApp flutuante */
+.wa-float{position:fixed;right:16px;bottom:16px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 14px 30px -8px rgba(37,211,102,.6);transition:transform .25s ease}
+.wa-float:hover{transform:scale(1.07)}
+.wa-float svg{width:28px;height:28px}
+.wa-float::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #25d366;animation:ring 2.4s ease-out infinite}
+@keyframes ring{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.5);opacity:0}}
+
+/* Revelar no scroll */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+@media (min-width:720px){
+  .services{grid-template-columns:repeat(2,1fr)}
+  .paths-grid{grid-template-columns:1fr 1fr}
+  .perks{grid-template-columns:1fr 1fr}
+  .band{margin:0 24px}
+  .photo-wide{aspect-ratio:21/9}
+}
+@media (min-width:980px){
+  .nav-links{display:flex}
+  .hero{padding-top:150px}
+  .hero-grid{grid-template-columns:1.05fr .95fr;gap:40px}
+  .hero-ctas .btn{flex:0 0 auto}
+  .stat{padding:28px 0 36px}
+  .stat + .stat{padding-left:28px}
+  .services{grid-template-columns:repeat(3,1fr)}
+  .band-grid{grid-template-columns:1.3fr .7fr;align-items:stretch;gap:40px}
+  .band-grid .perks{grid-template-columns:1fr 1fr}
+  .photo-pilot{aspect-ratio:auto;min-height:100%}
+  .hero-photo figure{aspect-ratio:5/4}
+  .grain-wrap{grid-template-columns:1.1fr .9fr;gap:60px}
+  .region{grid-template-columns:.9fr 1.1fr;gap:60px}
+  .section{padding:120px 0}
+  .band{padding:100px 0}
+  footer .wrap{flex-direction:row;justify-content:space-between;align-items:flex-start;flex-wrap:wrap}
+  .demo-note{flex-basis:100%}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- Ícone do WhatsApp reutilizável -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.13c-.24.68-1.42 1.32-1.96 1.37-.5.05-.97.24-3.27-.68-2.77-1.09-4.52-3.92-4.66-4.1-.13-.18-1.11-1.48-1.11-2.82 0-1.34.7-2 .95-2.27.24-.27.53-.34.71-.34h.51c.16 0 .38-.06.6.46.24.55.79 1.89.86 2.03.07.13.11.3.02.48-.09.18-.13.29-.27.45-.13.16-.28.36-.4.48-.13.13-.27.28-.12.55.16.27.7 1.15 1.5 1.86 1.03.92 1.9 1.2 2.17 1.34.27.13.43.11.58-.07.16-.18.67-.78.85-1.05.18-.27.36-.22.6-.13.25.09 1.57.74 1.84.88.27.13.45.2.52.31.07.11.07.65-.17 1.33Z"/></symbol>
+  <symbol id="arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></symbol>
+</svg>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#topo" class="logo" aria-label="Vértice Agro, início">
+      <span class="logo-mark">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 5l8 14 8-14" stroke="#e2b13c" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 19c0-5 2.5-8 6-9" stroke="#8fd16a" stroke-width="2" stroke-linecap="round"/></svg>
+      </span>
+      <span>Vértice Agro<small>Drones & Grãos</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Principal">
+      <a href="#drone">Drone</a>
+      <a href="#graos">Grãos</a>
+      <a href="#regiao">Região</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <a class="btn btn-gold js-wa" href="#" data-msg="Olá! Vim pelo site e quero mais informações.">
+      <svg><use href="#wa"/></svg>WhatsApp
+    </a>
+  </div>
+</header>
+
+<main id="topo">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="field" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow reveal">Sorriso e região · Mato Grosso</span>
+          <h1 class="reveal">Mais produtividade no campo, com <em>precisão de drone.</em></h1>
+          <p class="lead reveal">Pulverização e aplicação com drone agrícola, e compra da sua produção de grãos com pagamento rápido e seguro. Tudo resolvido numa conversa no WhatsApp.</p>
+          <div class="hero-ctas reveal">
+            <a class="btn btn-gold js-wa" href="#" data-msg="Olá! Quero um orçamento de aplicação com drone.">
+              <svg><use href="#wa"/></svg>Orçamento de aplicação
+            </a>
+            <a class="btn btn-ghost js-wa" href="#" data-msg="Olá! Tenho grãos para vender.">
+              Quero vender grãos<svg><use href="#arrow"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Foto do drone -->
+        <div class="hero-photo reveal">
+          <figure>
+            <img src="img/drone-pulverizacao.jpg" alt="Drone agrícola pulverizando lavoura" width="740" height="471" fetchpriority="high">
+          </figure>
+          <div class="badge badge-a"><i class="dot"></i><div><b>Aplicação em andamento</b><span>Faixa uniforme, sem amassar</span></div></div>
+          <div class="badge badge-b"><span class="ic">DJI</span><div><b>Agras T100</b><span>Equipamento próprio</span></div></div>
+        </div>
+      </div>
+
+      <div class="stats reveal">
+        <div class="stat"><strong>+12 mil</strong><span>hectares aplicados</span></div>
+        <div class="stat"><strong>48h</strong><span>para pagamento dos grãos</span></div>
+        <div class="stat"><strong>7 grãos</strong><span>comprados na região</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESCOLHA RÁPIDA -->
+  <div class="paths">
+    <div class="wrap paths-grid">
+      <a href="#drone" class="path drone-card reveal">
+        <div>
+          <span class="tag">Para sua lavoura</span>
+          <h3>Precisa aplicar?</h3>
+          <p>Pulverização, adubo, semente e dessecação com drone, sem amassar a lavoura.</p>
+        </div>
+        <span class="go">Ver serviços com drone <svg><use href="#arrow"/></svg></span>
+        <svg class="deco" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.2"><circle cx="5" cy="5" r="3"/><circle cx="19" cy="5" r="3"/><circle cx="5" cy="19" r="3"/><circle cx="19" cy="19" r="3"/><rect x="9" y="9" width="6" height="6" rx="1.5"/></svg>
+      </a>
+      <a href="#graos" class="path grain-card reveal">
+        <div>
+          <span class="tag">Para sua colheita</span>
+          <h3>Quer vender grãos?</h3>
+          <p>Compramos soja, milho e outros grãos, padrão ou avariado, com pagamento rápido.</p>
+        </div>
+        <span class="go">Ver como funciona <svg><use href="#arrow"/></svg></span>
+        <svg class="deco" viewBox="0 0 24 24" fill="none" stroke="#231a05" stroke-width="1.2"><ellipse cx="12" cy="6" rx="3" ry="4"/><ellipse cx="7" cy="13" rx="3" ry="4"/><ellipse cx="17" cy="13" rx="3" ry="4"/><path d="M12 10v12"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- SERVIÇOS COM DRONE -->
+  <section class="section" id="drone">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Serviços com drone</span>
+        <h2>Aplicação certa, no lugar certo.</h2>
+        <p>Drone agrícola com piloto habilitado, rota planejada e relatório da área aplicada. Você acompanha tudo.</p>
+      </div>
+      <figure class="photo photo-wide reveal">
+        <img src="https://images.unsplash.com/photo-1713952160156-bb59cac789a9?auto=format&fit=crop&w=1600&q=72" alt="Drone pulverizando linhas de lavoura" loading="lazy" width="1600" height="900">
+        <figcaption class="cap">Pulverização com drone na lavoura</figcaption>
+      </figure>
+      <div class="services">
+        <article class="service reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v4M6 8l2 3M18 8l-2 3M5 21l2-6M12 21v-6M19 21l-2-6"/></svg></div>
+          <h3>Pulverização</h3>
+          <p>Herbicida, inseticida e fungicida com vazão controlada e faixa uniforme.</p>
+        </article>
+        <article class="service reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c4-3 7-6.5 7-11a7 7 0 0 0-14 0c0 4.5 3 8 7 11Z"/><path d="M12 8v6M9 11h6"/></svg></div>
+          <h3>Fungicida</h3>
+          <p>Proteção no momento certo, inclusive com a lavoura fechada ou molhada.</p>
+        </article>
+        <article class="service reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="6" cy="16" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="18" cy="17" r="2"/><circle cx="9" cy="7" r="1.5"/><circle cx="16" cy="6" r="1.5"/></svg></div>
+          <h3>Aplicação de adubo</h3>
+          <p>Distribuição de sólidos a lanço com taxa variável conforme a área.</p>
+        </article>
+        <article class="service reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V11"/><path d="M12 11c0-4 3-6 7-6 0 4-3 6-7 6Z"/><path d="M12 14c0-3-2.5-5-6-5 0 3 2.5 5 6 5Z"/></svg></div>
+          <h3>Plantio de sementes</h3>
+          <p>Semeadura de plantas de cobertura com rapidez, mesmo em área úmida.</p>
+        </article>
+        <article class="service reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16"/><path d="M7 20V10M12 20V6M17 20v-8"/></svg></div>
+          <h3>Dessecação</h3>
+          <p>Preparo da área para colheita ou plantio com aplicação precisa.</p>
+        </article>
+        <article class="service reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18c3-4 6-4 9 0s6 4 9 0"/><path d="M3 12c3-4 6-4 9 0s6 4 9 0"/></svg></div>
+          <h3>Áreas difíceis</h3>
+          <p>Baixadas, áreas alagadas e terrenos onde o trator ou o avião não chegam.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- VANTAGENS -->
+  <section class="band">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Por que drone</span>
+        <h2>Menos perda, mais resultado.</h2>
+        <p>O drone aplica por cima da lavoura, sem rodado, sem amassamento e com muito menos água.</p>
+      </div>
+      <div class="band-grid">
+        <div>
+          <div class="perks">
+            <div class="perk reveal"><div class="perk-num">0%</div><div><h3>Sem amassamento</h3><p>Nenhum rodado passando por dentro da sua lavoura.</p></div></div>
+            <div class="perk reveal"><div class="perk-num">-90%</div><div><h3>Menos água</h3><p>Volume de calda muito menor do que na aplicação terrestre.</p></div></div>
+            <div class="perk reveal"><div class="perk-num">24h</div><div><h3>Resposta rápida</h3><p>Orçamento e agenda combinados no mesmo dia pelo WhatsApp.</p></div></div>
+            <div class="perk reveal"><div class="perk-num">100%</div><div><h3>Área registrada</h3><p>Mapa da aplicação e relatório entregues ao final do serviço.</p></div></div>
+          </div>
+          <div class="gear reveal">Equipamentos: <b>DJI Agras T100</b><b>DJI Agras T70P</b></div>
+        </div>
+        <figure class="photo photo-pilot reveal">
+          <img src="https://images.unsplash.com/photo-1720071702672-d18c69cb475c?auto=format&fit=crop&w=900&h=1125&q=72" alt="Piloto ao lado do drone agrícola" loading="lazy" width="900" height="1125">
+          <figcaption class="cap">Piloto habilitado em campo</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRÃOS -->
+  <section class="section" id="graos">
+    <div class="wrap grain-wrap">
+      <div class="reveal">
+        <div class="section-head" style="margin-bottom:0">
+          <span class="eyebrow">Compra de grãos</span>
+          <h2>Compramos sua produção em todo o Centro-Oeste.</h2>
+          <p>Negociação séria, preço justo e retirada com segurança. Grão padrão ou avariado.</p>
+        </div>
+        <div class="chips">
+          <span class="chip"><i></i>Soja</span>
+          <span class="chip"><i></i>Milho</span>
+          <span class="chip"><i></i>Feijão</span>
+          <span class="chip"><i></i>Sorgo</span>
+          <span class="chip"><i></i>Gergelim</span>
+          <span class="chip"><i></i>Milheto</span>
+          <span class="chip"><i></i>Arroz</span>
+        </div>
+        <div class="quality">
+          <div><strong>Padrão</strong><span>Melhor valorização para grão dentro do padrão.</span></div>
+          <div><strong>Avariado</strong><span>Também compramos, com avaliação na hora.</span></div>
+        </div>
+        <figure class="photo photo-grain">
+          <img src="https://images.unsplash.com/photo-1635174815612-fd9636f70146?auto=format&fit=crop&w=1200&q=72" alt="Colheitadeiras trabalhando na lavoura" loading="lazy" width="1200" height="750">
+          <figcaption class="cap">Retirada direto da sua colheita</figcaption>
+        </figure>
+      </div>
+
+      <div class="steps reveal">
+        <h3>Vender é simples</h3>
+        <div class="step"><div class="step-n">1</div><div><b>Manda uma foto</b><span>Foto do grão, quantidade e onde está armazenado.</span></div></div>
+        <div class="step"><div class="step-n">2</div><div><b>Recebe a proposta</b><span>Valor por saca, sem enrolação, no mesmo dia.</span></div></div>
+        <div class="step"><div class="step-n">3</div><div><b>Retirada e pagamento</b><span>Buscamos a carga e o pagamento cai em até 48h.</span></div></div>
+        <a class="btn btn-dark js-wa" href="#" data-msg="Olá! Tenho grãos para vender e quero uma proposta.">
+          <svg><use href="#wa"/></svg>Pedir proposta pelos grãos
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- REGIÃO -->
+  <section class="section" id="regiao" style="padding-top:0">
+    <div class="wrap region">
+      <div class="section-head reveal" style="margin-bottom:0">
+        <span class="eyebrow">Região atendida</span>
+        <h2>Perto de você no Médio Norte.</h2>
+        <p>Base em Sorriso, com atendimento nas cidades vizinhas para aplicação com drone.</p>
+      </div>
+      <div class="reveal">
+        <div class="cities">
+          <span class="city main"><svg><use href="#pin"/></svg>Sorriso</span>
+          <span class="city"><svg><use href="#pin"/></svg>Sinop</span>
+          <span class="city"><svg><use href="#pin"/></svg>Lucas do Rio Verde</span>
+          <span class="city"><svg><use href="#pin"/></svg>Nova Mutum</span>
+          <span class="city"><svg><use href="#pin"/></svg>Vera</span>
+          <span class="city"><svg><use href="#pin"/></svg>Ipiranga do Norte</span>
+          <span class="city"><svg><use href="#pin"/></svg>Tapurah</span>
+        </div>
+        <p class="region-note">Para compra de grãos, atendemos GO, MT, MS e DF.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DÚVIDAS -->
+  <section class="section" id="duvidas" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Dúvidas</span>
+        <h2>Perguntas frequentes</h2>
+      </div>
+      <div class="faq reveal">
+        <details>
+          <summary>Tem tamanho mínimo de área para aplicação?<span class="plus">+</span></summary>
+          <p>Atendemos desde áreas pequenas até grandes propriedades. Manda a localização e o tamanho da área que a gente monta o orçamento.</p>
+        </details>
+        <details>
+          <summary>Vocês fornecem o produto da aplicação?<span class="plus">+</span></summary>
+          <p>O mais comum é o produtor fornecer o produto e a gente fazer a aplicação. Se precisar, ajudamos a indicar o que usar.</p>
+        </details>
+        <details>
+          <summary>Como é feito o pagamento dos grãos?<span class="plus">+</span></summary>
+          <p>Depois da retirada e conferência da carga, o pagamento é feito em até 48h na conta do produtor.</p>
+        </details>
+        <details>
+          <summary>Compram grão avariado?<span class="plus">+</span></summary>
+          <p>Sim. Soja e milho avariados também entram na negociação, com valor de acordo com a avaliação.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="final">
+    <div class="wrap reveal">
+      <span class="eyebrow">Fale agora</span>
+      <h2>Uma mensagem e já resolvemos sua aplicação ou sua venda.</h2>
+      <p>Atendimento direto com quem faz o serviço. Sem intermediário, sem demora.</p>
+      <a class="btn btn-gold js-wa" href="#" data-msg="Olá! Vim pelo site e quero mais informações.">
+        <svg><use href="#wa"/></svg>Chamar no WhatsApp
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a href="#topo" class="logo">
+      <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M4 5l8 14 8-14" stroke="#e2b13c" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 19c0-5 2.5-8 6-9" stroke="#8fd16a" stroke-width="2" stroke-linecap="round"/></svg></span>
+      <span>Vértice Agro<small>Drones & Grãos</small></span>
+    </a>
+    <div class="foot-row">
+      <span>Sorriso, MT</span>
+      <a href="#drone">Drone agrícola</a>
+      <a href="#graos">Compra de grãos</a>
+      <a href="#regiao">Região</a>
+    </div>
+    <p class="demo-note">Página demonstrativa com marca fictícia. Criada por Vinicius · Sites Premium & Web IA · <span id="ano"></span> · Fotos complementares: Unsplash</p>
+  </div>
+</footer>
+
+<a class="wa-float js-wa" href="#" data-msg="Olá! Vim pelo site e quero mais informações." aria-label="Falar no WhatsApp">
+  <svg><use href="#wa"/></svg>
+</a>
+
+<script>
+  // Número do WhatsApp (troque aqui para usar outro número)
+  const WHATS = "5566996369065";
+
+  document.querySelectorAll(".js-wa").forEach(a => {
+    const msg = a.dataset.msg || "Olá!";
+    a.href = "https://wa.me/" + WHATS + "?text=" + encodeURIComponent(msg);
+    a.target = "_blank";
+    a.rel = "noopener";
+  });
+
+  // Navegação com fundo ao rolar
+  const nav = document.getElementById("nav");
+  const onScroll = () => nav.classList.toggle("scrolled", window.scrollY > 20);
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+
+  // Revelar elementos ao entrar na tela
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+    });
+  }, { threshold: .12, rootMargin: "0px 0px -40px 0px" });
+  document.querySelectorAll(".reveal").forEach((el, i) => {
+    el.style.transitionDelay = (i % 4) * 70 + "ms";
+    io.observe(el);
+  });
+
+  document.getElementById("ano").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
